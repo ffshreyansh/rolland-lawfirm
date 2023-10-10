@@ -5,7 +5,8 @@
 
 Welcome to this Next.js project starter template. This project is a web application built with Next.js, a powerful React framework for building modern web applications. It is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), providing you with a solid foundation to start your web development journey.
 
-![Project Screenshot](place-for-image-1.jpg)
+![rool](https://github.com/ffshreyansh/rolland-lawfirm/assets/51352120/306d5eff-5fae-4190-a528-07f6d6a5237a)
+
 
 ## Getting Started
 
