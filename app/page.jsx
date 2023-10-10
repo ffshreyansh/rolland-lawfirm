@@ -1,22 +1,52 @@
+"use client"
+import About from '@/components/About'
+import { motion } from 'framer-motion';
 import Nav from '@/components/Nav'
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
+  const animationVariants = {
+    initial: { opacity: 0, scale: 1 },
+    animate: { opacity: 1, scale: 1 },
+    exit: { opacity: 0, scale: 1 },
+  };
   return (
-    <div className='p-6 font-inter'>
+    <div className='p-6 font-inter pb-0'>
       <Nav />
-      <div className='py-6'>
-        <p className='text-center text-sm'>WE BUILD BRIDGES BETWEEN</p>
-        <p className='text-center font-bold text-8xl '>PROBLEM <br /> SOLUTION</p>
-      </div>
-      <div className='flex items-center justify-between text-xs py-3 px-4'>
+      <motion.div
+      className='py-6'
+      initial='initial'
+      animate='animate'
+      exit='exit'
+      variants={animationVariants}
+      transition={{ type: 'spring', stiffness: 200 }}
+    >
+      <p className='text-center text-sm'>WE BUILD BRIDGES BETWEEN</p>
+      <motion.p
+        className='text-center font-bold text-8xl'
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+        transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+      >
+        PROBLEM <br /> SOLUTION
+      </motion.p>
+    </motion.div>
+      <div className='flex items-center justify-between text-xs py-3 px-4 '>
         <span>A TEAM DEDICATED TO</span>
         <span>SOLVE YOUR PROBLEM</span>
       </div>
-      <div class="image-container rounded-lg">
+      <motion.div
+      className='py-6 image-container rounded-lg'
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ delay: 0.6, type: 'spring', stiffness: 200 }}
+    >
         <img src="https://images.pexels.com/photos/7063750/pexels-photo-7063750.jpeg" className='rounded-lg' alt="Your Image Description"/>
-      </div>
+        </motion.div>
+      <About/>
     </div>
   )
 }
