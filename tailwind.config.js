@@ -7,11 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        dela: ['Dela Gothic One', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+
       },
+      colors: {
+        'grey': "#666",
+        'green': "#ddf1e8",
+        'purple': "#e0e1ff",
+        'dp':"#c6c8f9",
+        'dg':"#c8e3da",
+        'ddg': "#9dc3b4",
+        'ddp': "#a7aae6"
+
+      }
     },
   },
   plugins: [],
