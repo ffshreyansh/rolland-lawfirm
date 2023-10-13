@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Nav from '@/components/Nav'
 import Image from 'next/image'
 import React from 'react'
+import Team from '@/components/Team';
+import PracticeArea from '@/components/PracticeArea';
 
 const page = () => {
   const animationVariants = {
@@ -47,6 +49,8 @@ const page = () => {
         <img src="https://images.pexels.com/photos/7063750/pexels-photo-7063750.jpeg" className='rounded-lg' alt="Your Image Description"/>
         </motion.div>
       <About/>
+      <Team/>
+      <PracticeArea/>
     </div>
   )
 }

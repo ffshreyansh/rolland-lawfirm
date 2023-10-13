@@ -1,8 +1,10 @@
 import React from 'react'
 
 const About = () => {
+
+
   return (
-    <div className='flex items-start justify-between py-24 font-inter'>
+    <div className='flex items-start justify-between  py-24 font-inter '>
       <div className=' w-1/4 text-lg font-medium '>
         ABOUT US
       </div>

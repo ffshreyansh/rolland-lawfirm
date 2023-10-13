@@ -9,7 +9,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex items-center font-inter justify-between">
+    <nav className="flex items-center font-inter justify-between ">
       <div className="font-bold cursor-pointer">ROLLAND</div>
       <div className="cursor-pointer" onClick={toggleMenu}>
         <img

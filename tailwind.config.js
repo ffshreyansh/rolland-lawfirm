@@ -19,7 +19,8 @@ module.exports = {
         'dp':"#c6c8f9",
         'dg':"#c8e3da",
         'ddg': "#9dc3b4",
-        'ddp': "#a7aae6"
+        'ddp': "#a7aae6",
+        'blue': "#145afe"
 
       }
     },
