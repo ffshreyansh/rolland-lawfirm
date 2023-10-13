@@ -61,3 +61,6 @@
     color: rgb(0, 0, 0);
   }
   
+  .maxW{
+    max-width: 18rem;
+  }
