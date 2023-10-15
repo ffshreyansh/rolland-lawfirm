@@ -7,6 +7,8 @@ import React from 'react'
 import Team from '@/components/Team';
 import PracticeArea from '@/components/PracticeArea';
 import OurTeam from '@/components/OurTeam';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
 
 const page = () => {
   const animationVariants = {
@@ -55,6 +57,9 @@ const page = () => {
       <Team/>
       <PracticeArea/>
       <OurTeam/>
+      {/* <FAQ/> */}
+
+      {/* <Footer/> */}
     </div>
   )
 }
