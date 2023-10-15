@@ -14,11 +14,11 @@ const PracticeArea = () => {
             <p className='text-center font-medium text-xl py-10 border-b-2'>OUR PRACTICE AREA</p>
             <ul>
                 {list.map((item) => (
-                    <li className='flex items-center justify-between py-10 border-b-2 cursor-pointer'>
-                        <span className='text-4xl'>{item.num}</span>
+                    <li className='flex items-center justify-between py-10 border-b-2 cursor-pointer list'>
+                        <span className='text-4xl text-gray-400'>{item.num}</span>
                         <span className='font-semibold uppercase text-7xl'>{item.title}</span>
                         <span className=''>
-                        <img width="25" height="25" className='rotate-45 fill-slate-400' src="/arrB.svg" alt="long-arrow-up" />
+                        <i className="fa-solid fa-arrow-up rotate-45 text-gray-400 text-4xl"></i>
                         </span>
                     </li>
                 ))}

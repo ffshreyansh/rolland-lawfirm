@@ -6,6 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 import Team from '@/components/Team';
 import PracticeArea from '@/components/PracticeArea';
+import OurTeam from '@/components/OurTeam';
 
 const page = () => {
   const animationVariants = {
@@ -14,7 +15,7 @@ const page = () => {
     exit: { opacity: 0, scale: 1 },
   };
   return (
-    <div className='p-6 font-inter pb-0'>
+    <div className='font-inter pb-0'>
       <Nav />
       <motion.div
       className='py-6'
@@ -35,12 +36,13 @@ const page = () => {
         PROBLEM <br /> SOLUTION
       </motion.p>
     </motion.div>
-      <div className='flex items-center justify-between text-xs py-3 px-4 '>
+      <div className='flex items-center justify-between text-xs px-10 '>
         <span>A TEAM DEDICATED TO</span>
         <span>SOLVE YOUR PROBLEM</span>
       </div>
+      <div className='p-6'>
       <motion.div
-      className='py-6 image-container rounded-lg'
+      className='image-container rounded-lg '
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
@@ -48,9 +50,11 @@ const page = () => {
     >
         <img src="https://images.pexels.com/photos/7063750/pexels-photo-7063750.jpeg" className='rounded-lg' alt="Your Image Description"/>
         </motion.div>
+      </div>
       <About/>
       <Team/>
       <PracticeArea/>
+      <OurTeam/>
     </div>
   )
 }
