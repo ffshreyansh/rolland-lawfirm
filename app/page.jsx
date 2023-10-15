@@ -27,7 +27,7 @@ const page = () => {
     >
       <p className='text-center text-sm'>WE BUILD BRIDGES BETWEEN</p>
       <motion.p
-        className='text-center font-bold text-8xl'
+      className='text-center font-bold text-3xl sm:text-5xl lg:text-8xl'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}

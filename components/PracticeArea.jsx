@@ -10,13 +10,13 @@ const PracticeArea = () => {
 
     ]
     return (
-        <div className='mt-20 p-10'>
+        <div className=' mt-4 mb-4 lg:mt-20 p-4 lg:p-10 w-full'>
             <p className='text-center font-medium text-xl py-10 border-b-2'>OUR PRACTICE AREA</p>
             <ul>
                 {list.map((item) => (
-                    <li className='flex items-center justify-between py-10 border-b-2 cursor-pointer list'>
+                    <li className='flex items-center justify-between py-8 lg:py-10 border-b-2 cursor-pointer list'>
                         <span className='text-4xl text-gray-400'>{item.num}</span>
-                        <span className='font-semibold uppercase text-7xl'>{item.title}</span>
+                        <span className='font-semibold uppercase text-xl lg:text-7xl'>{item.title}</span>
                         <span className=''>
                         <i className="fa-solid fa-arrow-up rotate-45 text-gray-400 text-4xl"></i>
                         </span>
