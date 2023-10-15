@@ -13,12 +13,12 @@ const OurTeam = () => {
 
   return (
     <div className="bg-black text-white font-inter p-6">
-      <p>OUR TEAM</p>
-      <div className="flex flex-col gap-8 items-start lg:gap-0 lg:flex lg:items-center lg:justify-between">
-        <p className="uppercase text-6xl font-medium mt-8">Expert in Position</p>
-        <button className="rounded-full w-28 h-fit py-2 border-white border-2">See More</button>
+      <p className=''>OUR TEAM</p>
+      <div className="flex flex-col gap-4 items-start lg:gap-0 lg:flex lg:items-center lg:justify-between">
+        <p className="uppercase text-4xl lg:text-6xl font-medium mt-4 lg:mt-8">Expert in Position</p>
+        <button className="rounded-full w-28 h-fit py-2 border-white border-2 text-sm lg:text-lg">See More</button>
       </div>
-      <div className="w-full mt-8 h-96 flex justify-between">
+      <div className="w-full mt-8 h-96 flex flex-col lg:flex justify-between">
         {images.map((image, index) => (
           <div
             key={index}

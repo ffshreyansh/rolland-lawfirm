@@ -36,7 +36,7 @@ const page = () => {
         PROBLEM <br /> SOLUTION
       </motion.p>
     </motion.div>
-      <div className='flex items-center justify-between text-xs px-10 my-8'>
+      <div className='flex items-center justify-between text-xs px-10 my-8 lg:my-0'>
         <span>A TEAM DEDICATED TO</span>
         <span>SOLVE YOUR PROBLEM</span>
       </div>
