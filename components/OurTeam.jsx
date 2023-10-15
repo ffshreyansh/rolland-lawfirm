@@ -14,7 +14,7 @@ const OurTeam = () => {
   return (
     <div className="bg-black text-white font-inter p-6">
       <p>OUR TEAM</p>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-8 items-start lg:gap-0 lg:flex lg:items-center lg:justify-between">
         <p className="uppercase text-6xl font-medium mt-8">Expert in Position</p>
         <button className="rounded-full w-28 h-fit py-2 border-white border-2">See More</button>
       </div>
