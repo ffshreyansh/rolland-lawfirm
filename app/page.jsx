@@ -57,9 +57,9 @@ const page = () => {
       <Team/>
       <PracticeArea/>
       <OurTeam/>
-      {/* <FAQ/> */}
+      <FAQ/>
 
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

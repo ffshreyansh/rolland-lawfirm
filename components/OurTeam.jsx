@@ -28,7 +28,7 @@ const OurTeam = () => {
             <img src={image} alt={`Image ${index}`} className={`${hoveredContainer === index ? 'visible image relative ' : 'visible image relative grayscale'}`} />
             <div className='absolute bottom-8 text-center flex flex-col gap1 left-1/2 transform -translate-x-1/2 translate-y-1/2'>
             <span className='text-sm font-bold'>Johnson Hopkins</span>
-            <span className='text-xs'>Co-founder</span>
+            <span className=' text-xs'>Co-founder</span>
             </div>
           </div>
         ))}
