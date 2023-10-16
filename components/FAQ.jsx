@@ -32,9 +32,9 @@ const FAQ = ({ question, answer }) => {
                 className="flex items-center justify-between text-xl font-medium uppercase cursor-pointer "
                 onClick={handleFaq}
             >
-                <span className={showFAQ ? ' text-4xl' : 'text-4xl text-gray-400'}>{question}</span>
+                <span className={showFAQ ? 'text-lg lg:text-4xl' : 'text-lg lg:text-4xl text-gray-500'}>{question}</span>
                 {
-                    showFAQ ? <i class="fa-solid fa-angle-up "></i> : <i class="fa-solid fa-angle-down text-gray-400"></i>
+                    showFAQ ? <i class="fa-solid fa-angle-up "></i> : <i class="fa-solid fa-angle-down text-gray-500"></i>
                 }
             </div>
             <div
@@ -51,10 +51,10 @@ const FAQ = ({ question, answer }) => {
 const FAQList = () => {
     return (
         <>
-            <div className="p-14   font-inter">
+            <div className="p-6 lg:p-14  font-inter">
                 <h5 className="text-2xl font-medium mb-3">FAQs</h5>
                 <h1 className="font-medium text-3xl lg:text-8xl ">COMMON QUESTIONS</h1>
-                <div className="mt-24">
+                <div className="mt-10 lg:mt-24">
                     <div className="flex flex-col items-center justify-between">
                         {FAQs.map((item, index) => (
                             <FAQ key={index} question={item.question} answer={item.answer} />

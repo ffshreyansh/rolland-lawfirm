@@ -101,13 +101,16 @@
 
 
 .container {
-  width: 30%; /* Adjust the width as needed */
+  width: 33.33%; /* Adjust the width as needed */
   transition: width 0.3s ease-in-out;
   position: relative;
 }
 
 .container:hover {
-  width: 35%; /* Adjust the width on hover as needed */
+  width: 35%;
+}
+.smtxt{
+  font-size: 0.7rem;
 }
 
 .image {
@@ -122,6 +125,27 @@
   display: block;
 }
 
+.tt{
+  font-size: 20vw;
+  line-height: normal;
+}
+.tt2{
+  font-size: 5.2vw;
+}
+.tt3{
+  font-size: 3.2vw;
+}
+.icons i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid grey;
+  padding: 16px;
+}
 @media (min-width: 325px) and (max-width: 760px){
   .rolland{
     font-size: 4.5rem;
@@ -131,4 +155,5 @@
   .image-container{
     max-height: 600px;
   }
+ 
 }

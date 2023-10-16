@@ -4,10 +4,9 @@ const OurTeam = () => {
   const [hoveredContainer, setHoveredContainer] = useState(null);
 
   const images = [
-    'https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/2955375/pexels-photo-2955375.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/3760810/pexels-photo-3760810.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/5699845/pexels-photo-5699845.jpeg?auto=compress&cs=tinysrgb&w=600',
   ];
 
   return (
@@ -28,7 +27,7 @@ const OurTeam = () => {
             <img src={image} alt={`Image ${index}`} className={`${hoveredContainer === index ? 'visible image relative ' : 'visible image relative grayscale'}`} />
             <div className='absolute bottom-8 text-center flex flex-col gap1 left-1/2 transform -translate-x-1/2 translate-y-1/2'>
             <span className='text-sm font-bold'>Johnson Hopkins</span>
-            <span className=' text-xs'>Co-founder</span>
+            <span className=' smtxt'>Co-founder</span>
             </div>
           </div>
         ))}
